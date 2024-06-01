@@ -9,11 +9,11 @@ task generateSourcesJar(type: Jar) {
 }
 
 android {
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         minSdk 21
-        targetSdk 32
+        targetSdk 34
 
         ndk {
             abiFilters 'armeabi', 'arm64-v8a'
@@ -62,11 +62,11 @@ android {
 dependencies {
 
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'com.google.android.material:material:1.12.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+//    implementation 'androidx.appcompat:appcompat:1.7.0'
+//    implementation 'com.google.android.material:material:1.12.0'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 //    implementation group: "aGroup", name: "anArtifact", version: "1.0-SNAPSHOT"
 //    implementation group: "aGroup", name: "anArtifact", version: "1.0", changing: true
